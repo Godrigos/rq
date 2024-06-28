@@ -11,13 +11,13 @@ You can install the latest version of rq by downloading the latest
 release from this repository and executing:
 
 ``` r
-# install.packages('rq_<version>.tar.gz', repos = NULL, type = 'source', dependencies = TRUE)
+install.packages('rq_<version>.tar.gz', repos = NULL, type = 'source', dependencies = TRUE)
 ```
 
 or directly from R with an internet connection using `devtools`:
 
 ``` r
-# devtools::install_github('godrigos/rq', dependencies = TRUE)
+devtools::install_github('godrigos/rq', dependencies = TRUE)
 ```
 
 ## Example
