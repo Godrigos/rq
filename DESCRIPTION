@@ -1,7 +1,7 @@
 Package: rq
 Type: Package
 Title: Calculate the Ralative Quantity from a qPCR analysis set 
-Version: 0.1.0
+Version: 0.1.1
 Authors@R: person("Rodrigo", "Aluizio", , "rodrigo.aluizio@ufpr.br",
                   role = c("aut", "cre"),
                   comment = c(ORCID = "0000-0002-9823-0597"))

@@ -90,18 +90,5 @@ rq <- function(data, normalizer, reference, treatment,
   cli_alert("Calculating Relative Quantity...")
   qpcr_mean$RQ <- 2^-(qpcr_mean$`Mean DCq` - (one))
 
-  ## Mean Relative Quantity
-  cli_alert("Calculating mean, sd and se of Relative Quantity...")
-  RQ <- qpcr_mean |>
-    group_by(Sample) |>
-    summarise(
-      `Mean RQ` = mean(RQ, na.rm = T),
-      `SD` = sd(RQ, na.rm = T),
-      `SE` = `SD`/ sqrt(n())
-    )
-  ## Set the reference value
-  cli_alert("Setting comparison value to 1...")
-  RQ$`Mean RQ`[RQ$Sample == reference] <- 1
-
-  return(RQ)
+  return(qpcr_mean)
 }
